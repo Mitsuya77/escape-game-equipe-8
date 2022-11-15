@@ -1,20 +1,3 @@
-// Compte a reboure 
-const departMinutes = 10
-let temps = departMinutes * 60
-//  récuperation de l'id
-const timerElement = document.getElementById("timer")
-
-//  appelle de manière répétée la fonction
-setInterval(() => {
-    let minutes = parseInt(temps / 60, 10)
-    let secondes = parseInt(temps % 60, 10)
-
-    minutes = minutes < 10 ? "0" + minutes : minutes
-    secondes = secondes < 10 ? "0" + secondes : secondes
-
-    timerElement.innerText = `${minutes}:${secondes}`
-    temps = temps <= 0 ? 0 : temps - 1
-    }, 1000)
 
 // si on est en hover sur la class carre_red , popup apparait  et disparait si on sort de la class 
 
@@ -110,3 +93,30 @@ pastille_orange[0].addEventListener('mouseout', function() {
     text_orange.style.display = 'none';
 }
 );
+
+// Compte a rebours
+const departMinutes = 10;
+let temps = departMinutes * 60
+//  récuperation de l'id
+const timerElement = document.getElementById("timer")
+
+//  appel 
+setInterval(() => {
+    let minutes = parseInt(temps / 60, 10)
+    let secondes = parseInt(temps % 60, 10)
+
+    minutes = minutes < 10 ? "0" + minutes : minutes
+    secondes = secondes < 10 ? "0" + secondes : secondes
+
+
+    timerElement.innerText = `${minutes}:${secondes}`
+    temps = temps <= 0 ? 0 : temps - 1
+
+    // si le timer est à 0 alors on redirige vers la page de fin defeat.html
+
+    if (minutes == 0 && secondes == 0) {
+        console.log("fin du jeu")
+        window.location.href = "defeat.html"
+    }
+    }, 1000)
+
