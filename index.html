@@ -5,15 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    <title>Room info du jeux</title>
 </head>
 <body>
     <div class="forme">
-        <div class="carre_red"></div>
-        <div class="carre_green"></div>
+        <div class="clue_hover carre_red" id="clue_hover"></div>
+        <div class="carre_green" id="clue_click"></div>
         <div class="carre_yellow"></div>
         <div class="carre_orange"></div>
+
+        <!-- popup au centre de la page par défaut en display none -->
+        <div class="popup_hover popup" id="popup_hover">
+
+            <p>test</p>
+            
+            
+        </div>
+
+        <!-- popup au centre de la page par défaut en display none -->
+        <div class="popup" id="popup_click">
+            <p id="close">X</p>
+                    <!-- contient des pastilles de couleur -->
+                    <div class="pastilles">
+                        <div class="pastille_red"></div>
+                        <div class="pastille_green"></div>
+                        <div class="pastille_yellow"></div>
+                        <div class="pastille_orange"></div>
+                    </div>
+        
+                    <!-- héxadécimal de la couleur -->   
+
+                    <div class="hexa" id="hexa_hover_red">#FF0000</div>
+                    <div class="hexa" id="hexa_hover_green">#00FF00</div>
+                    <div class="hexa" id="hexa_hover_yellow">#FFFF00</div>
+                    <div class="hexa" id="hexa_hover_orange">#FFA500</div>
+        </div>
+            
     </div>
+<script src="main.js"></script>
 </body>
 </html>
