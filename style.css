@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+
+
+/*index*/
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -16,9 +20,6 @@
     align-items: center;
     padding: 0 2rem;
 }
-
-/* bouton start sans soulignement sous le texte */
-
 
 .start {
     text-decoration: none;
@@ -35,6 +36,10 @@
     text-decoration: none;
     color: #fff;
 }
+
+
+
+
 .forme{
     
     display: flex;
