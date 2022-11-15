@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+
 .forme{
     
     display: flex;
@@ -143,6 +151,7 @@
     display: none;
 }
 
+
 /* partie explication */
 .explication{
     background-image: url(/images/background/325624a61782e94.jpg);
@@ -150,3 +159,4 @@
     background-size: 100%;
     height: 100%;  
 }
+
