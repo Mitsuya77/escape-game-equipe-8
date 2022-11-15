@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: blue;
-}
 .forme{
     height: 100vh;
     display: flex;
@@ -86,3 +83,35 @@ body{
     border-right: 60px solid transparent;
     border-bottom: 120px solid orange;
 }
+/* Images test */
+.background-index{
+    background-image: url(images/background/f3638265290819.5d61d475ee01c.jpg);
+    background-size: cover;
+    height: 100%;
+    
+}
+/* indice */
+.indice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.indice img {
+  width: 50px;
+  height: 50px;
+}
+/* compte à rebour */
+.compte-bourre {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+   height: 90vh;
+  }
+  
+  #timer {
+    padding-left: 100px;
+    color :white;
+    font-weight: bold;
+    font-size: 4em;
+  }
