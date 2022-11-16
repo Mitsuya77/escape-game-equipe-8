@@ -9,16 +9,44 @@
     <title>Room info du jeux</title>
 </head>
 <body>
-    <section class="image-1">
-        <div class="boite">
-            <div class="texte">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <div class="fleche">
-                    <img src="images/asset/—Pngtree—vector forward icon_4184777.png" alt="">
-                </div>
-            </div>
+    <div class="background-index">
+        <div class="indice">
+            <img id="clue_click" src="images/asset/coffre-en-bois-vide-ouvert-d-isolement-sur-le-fond-blanc-vecteur-130754797.jpg" alt="">
         </div>
-    </section>
+        <div class="indice1">
+            <img id="clue_hover" src="images/asset/coffre-en-bois-vide-ouvert-d-isolement-sur-le-fond-blanc-vecteur-130754797.jpg" alt="">
+        </div>
+        <div class="compte-bourre">
+            <div id="timer"></div>
+        </div>
+    </div>
+
+    <div class="forme">
+        <!-- popup au centre de la page par défaut en display none -->
+        <div class="popup" id="popup_hover">
+            <p>test</p>    
+        </div>
+
+        <!-- popup au centre de la page par défaut en display none -->
+        <div class="popup" id="popup_click">
+            <p id="close">X</p>
+                    <!-- contient des pastilles de couleur -->
+                <div class="pastilles">
+                    <div class="pastille_red"></div>
+                    <div class="pastille_green"></div>
+                    <div class="pastille_yellow"></div>
+                    <div class="pastille_orange"></div>
+                </div>
+    
+                <!-- héxadécimal de la couleur -->   
+
+                <div class="hexa" id="hexa_hover_red">#FF0000</div>
+                <div class="hexa" id="hexa_hover_green">#00FF00</div>
+                <div class="hexa" id="hexa_hover_yellow">#FFFF00</div>
+                <div class="hexa" id="hexa_hover_orange">#FFA500</div>
+        </div>
+            
+    </div>
 </body>
 <script src="main.js"></script>
 </html>
